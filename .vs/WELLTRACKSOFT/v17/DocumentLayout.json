@@ -7,28 +7,28 @@
       "RelativeMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|solutionrelative:welltracksoft\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|c:\\users\\herle\\source\\welltracksoft\\welltracksoft\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|C:\\Users\\herle\\source\\WELLTRACKSOFT\\welltracksoft\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|solutionrelative:welltracksoft\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|c:\\users\\herle\\source\\welltracksoft\\welltracksoft\\models\\welltracksoftdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|C:\\Users\\herle\\source\\WELLTRACKSOFT\\welltracksoft\\models\\welltracksoftdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|solutionrelative:welltracksoft\\models\\welltracksoftdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\herle\\source\\WELLTRACKSOFT\\WELLTRACKSOFT\\Migrations\\WellTrackSoftDb\\20240407181719_mig202404071412.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WELLTRACKSOFT\\Migrations\\WellTrackSoftDb\\20240407181719_mig202404071412.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|c:\\users\\herle\\source\\welltracksoft\\welltracksoft\\models\\transcationslog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|C:\\Users\\herle\\source\\WELLTRACKSOFT\\welltracksoft\\models\\transcationslog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|solutionrelative:welltracksoft\\models\\transcationslog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\herle\\source\\WELLTRACKSOFT\\WELLTRACKSOFT\\Migrations\\20240407180919_CreateIdentitySchema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WELLTRACKSOFT\\Migrations\\20240407180919_CreateIdentitySchema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|C:\\Users\\herle\\source\\WELLTRACKSOFT\\welltracksoft\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|solutionrelative:welltracksoft\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|c:\\users\\herle\\source\\welltracksoft\\welltracksoft\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|solutionrelative:welltracksoft\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|C:\\Users\\herle\\source\\WELLTRACKSOFT\\WELLTRACKSOFT\\Migrations\\WellTrackSoftDb\\20240407181719_mig202404071412.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|solutionrelative:WELLTRACKSOFT\\Migrations\\WellTrackSoftDb\\20240407181719_mig202404071412.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|C:\\Users\\herle\\source\\WELLTRACKSOFT\\WELLTRACKSOFT\\Migrations\\20240407180919_CreateIdentitySchema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|solutionrelative:WELLTRACKSOFT\\Migrations\\20240407180919_CreateIdentitySchema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +42,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "20240407181719_mig202404071412.cs",
               "DocumentMoniker": "C:\\Users\\herle\\source\\WELLTRACKSOFT\\WELLTRACKSOFT\\Migrations\\WellTrackSoftDb\\20240407181719_mig202404071412.cs",
               "RelativeDocumentMoniker": "WELLTRACKSOFT\\Migrations\\WellTrackSoftDb\\20240407181719_mig202404071412.cs",
@@ -50,12 +50,11 @@
               "RelativeToolTip": "WELLTRACKSOFT\\Migrations\\WellTrackSoftDb\\20240407181719_mig202404071412.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T18:17:19.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T18:17:19.64Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "TranscationsLog.cs",
               "DocumentMoniker": "C:\\Users\\herle\\source\\WELLTRACKSOFT\\WELLTRACKSOFT\\Models\\TranscationsLog.cs",
               "RelativeDocumentMoniker": "WELLTRACKSOFT\\Models\\TranscationsLog.cs",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "WELLTRACKSOFT\\Models\\TranscationsLog.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T18:16:33.679Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T18:16:33.679Z"
             },
             {
               "$type": "Document",
@@ -76,8 +74,7 @@
               "RelativeToolTip": "WELLTRACKSOFT\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T18:14:46.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T18:14:46.805Z"
             },
             {
               "$type": "Document",
@@ -89,12 +86,11 @@
               "RelativeToolTip": "WELLTRACKSOFT\\Models\\WellTrackSoftDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T18:13:24.909Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T18:13:24.909Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "20240407180919_CreateIdentitySchema.cs",
               "DocumentMoniker": "C:\\Users\\herle\\source\\WELLTRACKSOFT\\WELLTRACKSOFT\\Migrations\\20240407180919_CreateIdentitySchema.cs",
               "RelativeDocumentMoniker": "WELLTRACKSOFT\\Migrations\\20240407180919_CreateIdentitySchema.cs",
@@ -102,8 +98,7 @@
               "RelativeToolTip": "WELLTRACKSOFT\\Migrations\\20240407180919_CreateIdentitySchema.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAAACwAAABWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T18:09:19.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T18:09:19.183Z"
             },
             {
               "$type": "Document",
@@ -113,14 +108,14 @@
               "RelativeDocumentMoniker": "WELLTRACKSOFT\\appsettings.json",
               "ToolTip": "C:\\Users\\herle\\source\\WELLTRACKSOFT\\WELLTRACKSOFT\\appsettings.json",
               "RelativeToolTip": "WELLTRACKSOFT\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABeAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-04-07T18:07:37.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "C:\\Users\\herle\\source\\WELLTRACKSOFT\\WELLTRACKSOFT\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "WELLTRACKSOFT\\ScaffoldingReadMe.txt",
@@ -128,8 +123,7 @@
               "RelativeToolTip": "WELLTRACKSOFT\\ScaffoldingReadMe.txt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-04-07T18:05:50.143Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T18:05:50.143Z"
             }
           ]
         }
