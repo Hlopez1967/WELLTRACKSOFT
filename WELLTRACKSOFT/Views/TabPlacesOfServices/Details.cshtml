@@ -1,0 +1,37 @@
+﻿@model WELLTRACKSOFT.Models.TabPlacesOfService
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h4 class="text-decoration-none navegacion ms-4 mt-4">
+    <a class="text-decoration-none" href="/Home/Index">Home ></a><a class="text-decoration-none" href="/Home/DashBoard">DashBoard></a><a class="text-decoration-none" href="/Home/Configuration">Configuration></a><a class="text-decoration-none" href="/Home/Configuration">Master Configuration></a><span class="text-warning">Place of Service Detail</span>
+</h4>
+<div class="row mt-4 ml-4 shadow-sm p-3 mb-5 bg-white rounded">
+    <div class="col-md-12">
+        <div class="form-group">
+            <dl>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.PlaceOfServiceCode)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.PlaceOfServiceCode)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.PlaceOfServiceDesc)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.PlaceOfServiceDesc)
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+            <a asp-action="Index">Back to List</a>
+
+        </div>
+    </div>
+</div>
+

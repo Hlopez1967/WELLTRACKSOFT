@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\herle\\source\\WELLTRACKSOFT\\WELLTRACKSOFT\\WELLTRACKSOFT.csproj": {}
+    "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\WELLTRACKSOFT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\herle\\source\\WELLTRACKSOFT\\WELLTRACKSOFT\\WELLTRACKSOFT.csproj": {
+    "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\WELLTRACKSOFT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\herle\\source\\WELLTRACKSOFT\\WELLTRACKSOFT\\WELLTRACKSOFT.csproj",
+        "projectUniqueName": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\WELLTRACKSOFT.csproj",
         "projectName": "WELLTRACKSOFT",
-        "projectPath": "C:\\Users\\herle\\source\\WELLTRACKSOFT\\WELLTRACKSOFT\\WELLTRACKSOFT.csproj",
+        "projectPath": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\WELLTRACKSOFT.csproj",
         "packagesPath": "C:\\Users\\herle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\herle\\source\\WELLTRACKSOFT\\WELLTRACKSOFT\\obj\\",
+        "outputPath": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -70,7 +70,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.Identity.Client": {
               "target": "Package",

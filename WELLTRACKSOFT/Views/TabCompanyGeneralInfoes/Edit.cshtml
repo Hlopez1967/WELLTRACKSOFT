@@ -1,0 +1,96 @@
+﻿@model WELLTRACKSOFT.Models.TabCompanyGeneralInfo
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>TabCompanyGeneralInfo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="LegalName" class="control-label"></label>
+                <input asp-for="LegalName" class="form-control" />
+                <span asp-validation-for="LegalName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TradeName" class="control-label"></label>
+                <input asp-for="TradeName" class="form-control" />
+                <span asp-validation-for="TradeName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fax" class="control-label"></label>
+                <input asp-for="Fax" class="form-control" />
+                <span asp-validation-for="Fax" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Website" class="control-label"></label>
+                <input asp-for="Website" class="form-control" />
+                <span asp-validation-for="Website" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ein" class="control-label"></label>
+                <input asp-for="Ein" class="form-control" />
+                <span asp-validation-for="Ein" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Npi" class="control-label"></label>
+                <input asp-for="Npi" class="form-control" />
+                <span asp-validation-for="Npi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mpi" class="control-label"></label>
+                <input asp-for="Mpi" class="form-control" />
+                <span asp-validation-for="Mpi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TaxonomyCode" class="control-label"></label>
+                <input asp-for="TaxonomyCode" class="form-control" />
+                <span asp-validation-for="TaxonomyCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateCreated" class="control-label"></label>
+                <input asp-for="DateCreated" class="form-control" />
+                <span asp-validation-for="DateCreated" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Domain" class="control-label"></label>
+                <input asp-for="Domain" class="form-control" />
+                <span asp-validation-for="Domain" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AboutMe" class="control-label"></label>
+                <input asp-for="AboutMe" class="form-control" />
+                <span asp-validation-for="AboutMe" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Logo" class="control-label"></label>
+                <input asp-for="Logo" class="form-control" />
+                <span asp-validation-for="Logo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

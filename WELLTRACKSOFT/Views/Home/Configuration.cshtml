@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewData["Title"] = "Configuration";
+}
+
+
+<h4 class="text-decoration-none navegacion ms-4 mt-4"><a class="text-decoration-none" href="/Home/Index">Home ></a><a class="text-decoration-none" href="/Home/DashBoard">DashBoard></a><span class="text-warning">Configuration</span></h4>
+
+<div class="row mt-4 ms-4">
+       
+
+    <div class="card mb-3 mx-2 cardEstilo2">
+        <a asp-controller="TabCompanyGeneralInfoes" asp-action="create" class="text-decoration-none">
+        <div class="row g-0">
+                <div class="col-md-3 hover-zoom mt-3">
+
+                    <i class="fa-regular fa-address-card  fa-2xl"></i>
+
+               @*  <img src="https://s3.amazonaws.com/cdn.officepuzzle.com/logos/40.svg" width="50" height="50" class="img-fluid rounded-start ms-2 mt-2 w-100" alt="..."> *@
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <span class="text-dark cardEstilo2Letra1"><strong>Account Profile</strong></span>
+                </div>
+               
+            </div>
+        </div>
+        <div class="row my-2">
+            <span class="text-dark cardEstilo2Letra2">Manage your organizations profile and preferences</span>
+        </div>
+        </a>
+    </div>
+
+
+    <div class="card mb-3 mx-2 cardEstilo2">
+        <a asp-controller="TabStreetAddresses" asp-action="Index" class="text-decoration-none">
+            <div class="row g-0">
+                <div class="col-md-3 hover-zoom mt-3">
+
+                    <i class="fa-solid fa-location-dot  fa-2xl"></i>
+
+                  @*   <img src="https://s3.amazonaws.com/cdn.officepuzzle.com/icons/354-map location.svg" width="50" height="50" class="img-fluid rounded-start ms-2 mt-2 w-100" alt="..."> *@
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <span class="text-dark cardEstilo2Letra1"><strong>Addresses</strong></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row my-2">
+                <span class="text-dark cardEstilo2Letra2">Manage your physical addresses</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="card mb-3 mx-2 cardEstilo2">
+        <a asp-controller="Home" asp-action="MasterConfiguration" class="text-decoration-none">
+            <div class="row g-0">
+                <div class="col-md-3 hover-zoom mt-3">
+                    <i class="fa-solid fa-table-list fa-2xl"></i>
+                    
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <span class="text-dark cardEstilo2Letra1"><strong>Master Tables</strong></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row my-2">
+                <span class="text-dark cardEstilo2Letra2">Master Tables Configuration</span>
+            </div>
+        </a>
+    </div>
+
+
+
+
+    <div class="card mb-3 mx-2 cardEstilo2">
+        <a asp-controller="Home" asp-action="billingmenu" class="text-decoration-none">
+            <div class="row g-0">
+                <div class="col-md-3 hover-zoom mt-3">
+                    <i class="fa-solid fa-file-invoice fa-2xl"></i>
+        
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <span class="text-dark cardEstilo2Letra1"><strong>Billing</strong></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row my-2">
+                <span class="text-dark cardEstilo2Letra2">All configuration associated with Billing</span>
+            </div>
+        </a>
+    </div>
+</div>
+

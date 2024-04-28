@@ -7,9 +7,9 @@ namespace WELLTRACKSOFT.Models
         
         public WellTrackSoftDbContext(DbContextOptions<WellTrackSoftDbContext> options) : base(options)
         {
-
+            ///NO USAR //NO USAR  /*/NO TIENE NINGUNA FUNCION
         }
-
+       
 
         public virtual DbSet<TranscationsLog> TranscationsLogs { get; set; } 
 

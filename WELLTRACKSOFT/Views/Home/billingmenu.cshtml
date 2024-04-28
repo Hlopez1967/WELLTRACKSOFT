@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewData["Title"] = "billingmenu";
+}
+
+<h4 class="text-decoration-none navegacion ms-4 mt-4"><a class="text-decoration-none" href="/Home/Index">Home ></a><a class="text-decoration-none" href="/Home/DashBoard">DashBoard></a><a class="text-decoration-none" href="/Home/Configuration">Configuration></a><span class="text-warning">Billing Menu</span></h4>
+
+
+<div class="row mt-4 ms-4">
+
+
+    <div class="card mb-3 mx-2 cardEstilo2">
+        <a asp-controller="TabPlacesOfServices" asp-action="Index" class="text-decoration-none">
+            <div class="row g-0">
+                <div class="col-md-3 hover-zoom mt-3">
+
+                    <i class="fa-solid fa-list-ol  fa-2xl"></i>
+
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <span class="text-dark cardEstilo2Letra1"><strong>Billing Codes</strong></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row my-2">
+                <span class="text-dark cardEstilo2Letra2">Approved billing codes by organization</span>
+            </div>
+        </a>
+    </div>
+
+
+    <div class="card mb-3 mx-2 cardEstilo2">
+        <a asp-controller="TabStreetAddresses" asp-action="Index" class="text-decoration-none">
+            <div class="row g-0">
+                <div class="col-md-3 hover-zoom mt-3">
+                   
+                    <i class="fa-solid fa-building-circle-check  fa-2xl"></i>
+
+                    @*   <img src="https://s3.amazonaws.com/cdn.officepuzzle.com/icons/354-map location.svg" width="50" height="50" class="img-fluid rounded-start ms-2 mt-2 w-100" alt="..."> *@
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <span class="text-dark cardEstilo2Letra1"><strong>Entities</strong></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row my-2">
+                <span class="text-dark cardEstilo2Letra2">All billing entities available</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="card mb-3 mx-2 cardEstilo2">
+        <a asp-controller="Home" asp-action="MasterConfiguration" class="text-decoration-none">
+            <div class="row g-0">
+                <div class="col-md-3 hover-zoom mt-3">
+                    <i class="fa-solid fa-file-invoice-dollar fa-2xl"></i>
+                  
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <span class="text-dark cardEstilo2Letra1"><strong>Payers</strong></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row my-2">
+                <span class="text-dark cardEstilo2Letra2">Approved Payers</span>
+            </div>
+        </a>
+    </div>
+
+
+
+
+    <div class="card mb-3 mx-2 cardEstilo2">
+        <a asp-controller="Home" asp-action="billingmenu" class="text-decoration-none">
+            <div class="row g-0">
+                <div class="col-md-3 hover-zoom mt-3">
+                    <i class="fa-solid fa-landmark fa-2xl"></i>
+                    
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <span class="text-dark cardEstilo2Letra1"><strong>Clearing Houses</strong></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row my-2">
+                <span class="text-dark cardEstilo2Letra2">Approved Clearing Houses</span>
+            </div>
+        </a>
+    </div>
+</div>

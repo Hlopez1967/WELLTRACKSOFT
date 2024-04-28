@@ -1,0 +1,75 @@
+﻿@model IEnumerable<WELLTRACKSOFT.Models.TabBillingCodeType>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="row  justify-content-between">
+    <div class="col-md-8">
+        <h4 class="text-decoration-none navegacion ms-4 mt-4">
+            <a class="text-decoration-none" href="/Home/Index">Home ></a><a class="text-decoration-none" href="/Home/DashBoard">DashBoard></a><a class="text-decoration-none" href="/Home/Configuration">Configuration></a><a class="text-decoration-none" href="/Home/MasterConfiguration">Master Configuration></a><span class="text-warning">Billing Code Type List</span>
+        </h4>
+    </div>
+    <div class="col-md-2 mt-4 align-content-end">
+        <a asp-action="Create" style="font-size:x-small" class="btn btn-info">+ New Type Code</a>
+    </div>
+    <div class=" col-md-2 align-content-end">
+        <a href="#" onclick="openhelp()"><i id="showhelpbutton" class="fas fa-question-circle"></i></a>
+        <span class="idImagen2 text-warning" style="font-size:x-small">Read this for help</span>
+        <a href="#" onclick="closehelp()"><i id="hidehelpbutton" class="fas fa-window-close" style="display:none"></i></a>
+    </div>
+
+</div>
+<div class="row mt-2 ml-4 shadow-sm p-3 mb-5 bg-white rounded">
+    <table id="tableuser" class="Display nowrap  cell-border compact stripe" style="width:100%;font-size:small">
+        <thead>
+            <tr>
+                <th>Actions</th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BctypeCode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BctypeDesc)
+                </th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id"><i class="fas fa-pencil-alt"></i></a> |
+                        <a asp-action="Details" asp-route-id="@item.Id"><i class="fas fa-eye"></i></a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BctypeCode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BctypeDesc)
+                    </td>
+                   
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@section scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('#tableuser').DataTable()
+
+
+
+        })
+
+    </script>
+
+}

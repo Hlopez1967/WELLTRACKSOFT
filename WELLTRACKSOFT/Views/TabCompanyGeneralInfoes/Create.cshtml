@@ -1,0 +1,133 @@
+﻿@model WELLTRACKSOFT.Models.TabCompanyGeneralInfo
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h4 class="text-decoration-none navegacion ms-4 mt-4"><a class="text-decoration-none" href="/Home/Index">Home ></a><a class="text-decoration-none" href="/Home/DashBoard">DashBoard></a><a class="text-decoration-none" href="/Home/Configuration">Configuration></a><span class="text-warning">Account</span></h4>
+
+
+<form asp-action="Create">
+    <div class="row mt-2">
+        <div class="row">
+            <div class="col-md-6">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="LegalName" class="control-label labelstitle"></label>
+                    <input asp-for="LegalName" class="form-control" />
+                    <span asp-validation-for="LegalName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="TradeName" class="control-label labelstitle"></label>
+                    <input asp-for="TradeName" class="form-control" />
+                    <span asp-validation-for="TradeName" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label  labelstitle"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="PhoneNumber" class="control-label labelstitle"></label>
+                    <input asp-for="PhoneNumber" class="form-control" />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Fax" class="control-label labelstitle"></label>
+                    <input asp-for="Fax" class="form-control" />
+                    <span asp-validation-for="Fax" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Website" class="control-label labelstitle"></label>
+                    <input asp-for="Website" class="form-control" />
+                    <span asp-validation-for="Website" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Ein" class="control-label labelstitle"></label>
+                    <input asp-for="Ein" class="form-control" />
+                    <span asp-validation-for="Ein" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Npi" class="control-label labelstitle"></label>
+                    <input asp-for="Npi" class="form-control" />
+                    <span asp-validation-for="Npi" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Mpi" class="control-label labelstitle"></label>
+                    <input asp-for="Mpi" class="form-control" />
+                    <span asp-validation-for="Mpi" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="TaxonomyCode" class="control-label labelstitle"></label>
+                    <input asp-for="TaxonomyCode" class="form-control" />
+                    <span asp-validation-for="TaxonomyCode" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="AboutMe" class="control-label labelstitle"></label>
+                    <input asp-for="AboutMe" class="form-control" />
+                    <span asp-validation-for="AboutMe" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Domain" class="control-label labelstitle"></label>
+                    <input asp-for="Domain" class="form-control" />
+                    <span asp-validation-for="Domain" class="text-danger"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label asp-for="AboutMe" class="control-label labelstitle"></label>
+                <input asp-for="AboutMe" class="form-control" />
+                <span asp-validation-for="AboutMe" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+</form>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

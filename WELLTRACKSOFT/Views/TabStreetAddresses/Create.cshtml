@@ -1,0 +1,115 @@
+﻿@model WELLTRACKSOFT.Models.csNewAddress
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h4 class="text-decoration-none navegacion ms-4 mt-4"><a class="text-decoration-none" href="/Home/Index">Home ></a><a class="text-decoration-none" href="/Home/DashBoard">DashBoard></a><a class="text-decoration-none" href="/Home/Configuration">Configuration></a><span class="text-warning">New Addresses</span></h4>
+
+
+<div class="row mt-2 ml-4 shadow-sm p-3 mb-5 bg-white rounded">
+    <form asp-action="Create">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="@Model.NickName" class="control-label"></label>
+                    <input asp-for="@Model.NickName" maxlength="250" class="form-control" />
+                    <span asp-validation-for="@Model.NickName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="@Model.placeofserviceid" class="control-label"></label>
+                    <select asp-for="@Model.placeofserviceid" class="form-control" asp-items="@ViewBag.placesid">
+                        <option selected disabled>Select Place</option>
+                    </select>
+                    <span asp-validation-for="@Model.placeofserviceid" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="@Model.TabStreetAddress.Address1" class="control-label"></label>
+                    <input asp-for="@Model.TabStreetAddress.Address1" maxlength="250" class="form-control" />
+                    <span asp-validation-for="@Model.TabStreetAddress.Address1" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="@Model.TabStreetAddress.Address2" class="control-label"></label>
+                    <input asp-for="@Model.TabStreetAddress.Address2" maxlength="250" class="form-control" />
+                    <span asp-validation-for="@Model.TabStreetAddress.Address2" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="@Model.TabStreetAddress.City" class="control-label"></label>
+                    <input asp-for="@Model.TabStreetAddress.City" class="form-control" />
+                    <span asp-validation-for="@Model.TabStreetAddress.City" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="@Model.TabStreetAddress.State" class="control-label"></label>
+                    <input asp-for="@Model.TabStreetAddress.State" class="form-control" />
+                    <span asp-validation-for="@Model.TabStreetAddress.State" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="@Model.TabStreetAddress.ZipCode" class="control-label"></label>
+                    <input asp-for="@Model.TabStreetAddress.ZipCode" class="form-control" />
+                    <span asp-validation-for="@Model.TabStreetAddress.ZipCode" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="@Model.TabStreetAddress.Phone" class="control-label"></label>
+                    <input asp-for="@Model.TabStreetAddress.Phone" class="form-control" />
+                    <span asp-validation-for="@Model.TabStreetAddress.Phone" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group mt-4">
+                    <div class="form-group form-check mt-4">
+                        <input type="checkbox" class="form-check-input mt-3" id="chkIsdefault">
+                        <label class="form-check-label mt-2" for="exampleCheck1">Is Default</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="form-group mt-2">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <a asp-action="Index">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+

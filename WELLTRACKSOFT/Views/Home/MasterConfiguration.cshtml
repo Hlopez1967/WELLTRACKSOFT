@@ -1,0 +1,96 @@
+﻿@{
+    ViewData["Title"] = "Configuration";
+}
+
+<h4 class="text-decoration-none navegacion ms-4 mt-4"><a class="text-decoration-none" href="/Home/Index">Home ></a><a class="text-decoration-none" href="/Home/DashBoard">DashBoard></a><a class="text-decoration-none" href="/Home/Configuration">Configuration></a><span class="text-warning">Master Configuration</span></h4>
+
+<div class="row mt-4 ms-4">
+
+
+    <div class="card mb-3 mx-2 cardEstilo2">
+        <a asp-controller="TabPlacesOfServices" asp-action="Index" class="text-decoration-none">
+            <div class="row g-0">
+                <div class="col-md-3 hover-zoom mt-3">
+
+                    <i class="fa-regular fa-building  fa-2xl"></i>
+                   
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <span class="text-dark cardEstilo2Letra1"><strong>Place of Service</strong></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row my-2">
+                <span class="text-dark cardEstilo2Letra2">Offices Location</span>
+            </div>
+        </a>
+    </div>
+
+
+    <div class="card mb-3 mx-2 cardEstilo2">
+        <a asp-controller="TabBillingCodeTypes" asp-action="Index" class="text-decoration-none">
+            <div class="row g-0">
+                <div class="col-md-3 hover-zoom mt-3">
+                   
+                    <i class="fa-solid fa-list-ol  fa-2xl"></i>
+
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <span class="text-dark cardEstilo2Letra1"><strong>Type Bill Code</strong></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row my-2">
+                <span class="text-dark cardEstilo2Letra2">Type Bill Code</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="card mb-3 mx-2 cardEstilo2">
+        <a asp-controller="TabStandardBillingCodes" asp-action="Index" class="text-decoration-none">
+            <div class="row g-0">
+                <div class="col-md-3 hover-zoom mt-3">
+                   
+                    <i class="fa-solid fa-arrow-down-wide-short  fa-2xl"></i>
+
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <span class="text-dark cardEstilo2Letra1"><strong>Standard Bill Code</strong></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row my-2">
+                <span class="text-dark cardEstilo2Letra2">Standard Bill Code</span>
+            </div>
+        </a>
+    </div>
+
+
+    <div class="card mb-3 mx-2 cardEstilo2">
+        <a asp-controller="TabBillingCodesModifiers" asp-action="Index" class="text-decoration-none">
+            <div class="row g-0">
+                <div class="col-md-3 hover-zoom mt-3">
+
+                    <i class="fa-solid fa-arrow-down-wide-short  fa-2xl"></i>
+
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <span class="text-dark cardEstilo2Letra1"><strong>Billing Codes Modifiers</strong></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row my-2">
+                <span class="text-dark cardEstilo2Letra2">Billing Codes Modifiers</span>
+            </div>
+        </a>
+    </div>
+
+</div>

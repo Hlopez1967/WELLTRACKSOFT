@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\WELLTRACKSOFT.props" />
+</Project>

@@ -1,0 +1,78 @@
+﻿@model IEnumerable<WELLTRACKSOFT.Models.TabStreetAddress>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row  justify-content-between">
+    <div class="col-md-10">
+        <h4 class="text-decoration-none navegacion ms-4 mt-4"><a class="text-decoration-none" href="/Home/Index">Home ></a><a class="text-decoration-none" href="/Home/DashBoard">DashBoard></a><a class="text-decoration-none" href="/Home/Configuration">Configuration></a><span class="text-warning">Addresses List</span></h4>
+    </div>
+
+   
+
+        <div class="col-md-2 mt-4">
+        <a asp-action="Create" style="font-size:x-small" class="btn btn-info">+ New Address</a>
+        
+    </div>
+</div>
+
+<div class="row mt-2 ml-4 shadow-sm p-3 mb-5 bg-white rounded">
+
+    @foreach (var item in Model)
+    {
+
+        @*   <div class="row mt-4 ms-4">
+
+    <div class="card" style="width: 25rem;">
+
+
+
+    <img class="card-img-top mt-2" src="https://s3.amazonaws.com/cdn.officepuzzle.com/icons/134-map.svg" height="120" width="120" alt="Card image cap">
+    <div class="card-body">
+
+    <h5 class="card-title" style="text-align:center">Office</h5>
+
+    <p class="card-text">@item.Address1 @item.Address2, @item.City, @item.State, @item.ZipCode</p>
+
+    <a href="#" class="btn btn-outline-info">Primary</a>
+
+    </div>
+    </div>
+
+    </div> *@
+
+
+
+        <div class="card mb-3 mx-2 cardEstilo2">
+            <a asp-controller="TabCompanyGeneralInfoes" asp-action="create" class="text-decoration-none">
+                <div class="row g-0">
+                    <div class="col-md-3 hover-zoom mt-3">
+
+                        <i class="fa-solid fa-map-location-dot  fa-2xl"></i>
+
+                        @*  <img src="https://s3.amazonaws.com/cdn.officepuzzle.com/logos/40.svg" width="50" height="50" class="img-fluid rounded-start ms-2 mt-2 w-100" alt="..."> *@
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <span class="text-dark cardEstilo2Letra1"><strong>Office</strong></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <span class="text-dark cardEstilo2Letra2">@item.Address1 @item.Address2, @item.City, @item.State, @item.ZipCode</span>
+                </div>
+                <div class="row my-2">
+                    <div class="col-md-2">
+                        <a href="#" class="btn btn-outline-info">Primary</a>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    }
+
+</div>
+
+

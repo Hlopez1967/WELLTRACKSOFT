@@ -23,6 +23,30 @@ namespace WELLTRACKSOFT.Controllers
             return View();
         }
 
+        public IActionResult DashBoard()
+        {
+            return View();
+        }
+
+
+        public IActionResult Configuration()
+        {
+            return View();
+        }
+
+
+        public IActionResult MasterConfiguration()
+        {
+            return View();
+        }
+
+        public IActionResult billingmenu()
+        {
+            return View();
+        }
+
+        
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

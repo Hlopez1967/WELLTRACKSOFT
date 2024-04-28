@@ -1,0 +1,40 @@
+﻿@model WELLTRACKSOFT.Models.TabPlacesOfService
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h4 class="text-decoration-none navegacion ms-4 mt-4">
+    <a class="text-decoration-none" href="/Home/Index">Home ></a><a class="text-decoration-none" href="/Home/DashBoard">DashBoard></a><a class="text-decoration-none" href="/Home/Configuration">Configuration></a><a class="text-decoration-none" href="/Home/Configuration">Master Configuration></a><span class="text-warning">Place of Service Edit</span>
+</h4>
+<div class="row mt-4 ml-4 shadow-sm p-3 mb-5 bg-white rounded">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="PlaceOfServiceCode" class="control-label"></label>
+                <input asp-for="PlaceOfServiceCode" class="form-control" />
+                <span asp-validation-for="PlaceOfServiceCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PlaceOfServiceDesc" class="control-label"></label>
+                <input asp-for="PlaceOfServiceDesc" class="form-control" />
+                <span asp-validation-for="PlaceOfServiceDesc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+
+            <div class="form-group">
+                <a asp-action="Index">Back to List</a>
+            </div>
+
+        </form>
+    </div>
+
+  
+</div>
+
+
+
