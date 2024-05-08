@@ -1,0 +1,46 @@
+﻿@model WELLTRACKSOFT.Models.TabPayersCatalog
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>TabPayersCatalog</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="PayerId" class="control-label"></label>
+                <input asp-for="PayerId" class="form-control" />
+                <span asp-validation-for="PayerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PayerName" class="control-label"></label>
+                <input asp-for="PayerName" class="form-control" />
+                <span asp-validation-for="PayerName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PayerType" class="control-label"></label>
+                <input asp-for="PayerType" class="form-control" />
+                <span asp-validation-for="PayerType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateCreated" class="control-label"></label>
+                <input asp-for="DateCreated" class="form-control" />
+                <span asp-validation-for="DateCreated" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

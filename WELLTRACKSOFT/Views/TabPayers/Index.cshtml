@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WELLTRACKSOFT.Models.TabPayer>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+
+    col-md-12 {
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+</style>
+
+<div class="row  justify-content-between">
+    <div class="col-md-8">
+        <h4 class="text-decoration-none navegacion ms-4 mt-4"><a class="text-decoration-none" href="/Home/Index">Home ></a><a class="text-decoration-none" href="/Home/DashBoard">DashBoard></a><a class="text-decoration-none" href="/Home/Configuration">Configuration></a><a class="text-decoration-none" href="/Home/billingmenu">Billing Menu></a><span class="text-warning">Payers List</span></h4>
+    </div>
+    <div class="col-md-2 mt-4 align-content-end">
+        <a asp-action="Create" style="font-size:x-small" class="btn btn-info">+ New Payer</a>
+    </div>
+    <div class=" col-md-2 align-content-end">
+        <a href="#" onclick="openhelp()"><i id="showhelpbutton" class="fas fa-question-circle"></i></a>
+        <span class="idImagen2 text-warning" style="font-size:x-small">Read this for help</span>
+        <a href="#" onclick="closehelp()"><i id="hidehelpbutton" class="fas fa-window-close" style="display:none"></i></a>
+    </div>
+
+</div>
+
+<div class="row mt-2 ml-4 shadow-sm p-3 mb-5 bg-white rounded">
+
+    @foreach (var item in Model)
+    {
+
+        <div class="card" style="width: 15rem;">
+            <a asp-controller="TabPayers" asp-action="payershealth" asp-route-id="@item.Id" class=" text-decoration-none">
+                <img class="cardEstilo3" src="~/image/logo1.png" alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <p class="card-text">@item.PayerName <a asp-action="Edit" asp-route-id="@item.Id"><i class="fas fa-pencil-alt"></i></a></p>
+            </div>
+
+        </div>
+
+
+    }
+
+</div>

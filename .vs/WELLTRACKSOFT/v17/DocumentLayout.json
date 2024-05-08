@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|c:\\users\\herle\\source\\repos\\welltracksoft\\welltracksoft\\views\\tabbillingcodetypes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|solutionrelative:welltracksoft\\views\\tabbillingcodetypes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|c:\\users\\herle\\source\\repos\\welltracksoft\\welltracksoft\\views\\tabpayers\\payershealth.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|solutionrelative:welltracksoft\\views\\tabpayers\\payershealth.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|c:\\users\\herle\\source\\repos\\welltracksoft\\welltracksoft\\views\\tabbillingcodetypes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|solutionrelative:welltracksoft\\views\\tabbillingcodetypes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|c:\\users\\herle\\source\\repos\\welltracksoft\\welltracksoft\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|solutionrelative:welltracksoft\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|c:\\users\\herle\\source\\repos\\welltracksoft\\welltracksoft\\views\\tabbillingcodetypes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|solutionrelative:welltracksoft\\views\\tabbillingcodetypes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\welltracksoft\\views\\tabpayers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|solutionrelative:welltracksoft\\views\\tabpayers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|c:\\users\\herle\\source\\repos\\welltracksoft\\welltracksoft\\views\\tabbillingcodetypes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|solutionrelative:welltracksoft\\views\\tabbillingcodetypes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|c:\\users\\herle\\source\\repos\\welltracksoft\\welltracksoft\\views\\tabpayers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|solutionrelative:welltracksoft\\views\\tabpayers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|c:\\users\\herle\\source\\repos\\welltracksoft\\welltracksoft\\controllers\\tabpayerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24587D6F-E27F-4279-B71F-D27EE18FBCD2}|WELLTRACKSOFT\\WELLTRACKSOFT.csproj|solutionrelative:welltracksoft\\controllers\\tabpayerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\Views\\TabBillingCodeTypes\\Delete.cshtml",
-              "RelativeDocumentMoniker": "WELLTRACKSOFT\\Views\\TabBillingCodeTypes\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\Views\\TabBillingCodeTypes\\Delete.cshtml",
-              "RelativeToolTip": "WELLTRACKSOFT\\Views\\TabBillingCodeTypes\\Delete.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAgwCUAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T02:27:53.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\Views\\TabBillingCodeTypes\\Edit.cshtml",
-              "RelativeDocumentMoniker": "WELLTRACKSOFT\\Views\\TabBillingCodeTypes\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\Views\\TabBillingCodeTypes\\Edit.cshtml",
-              "RelativeToolTip": "WELLTRACKSOFT\\Views\\TabBillingCodeTypes\\Edit.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T02:23:37.643Z",
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "WELLTRACKSOFT\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "WELLTRACKSOFT\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-08T01:47:46.61Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\Views\\TabBillingCodeTypes\\Create.cshtml",
-              "RelativeDocumentMoniker": "WELLTRACKSOFT\\Views\\TabBillingCodeTypes\\Create.cshtml",
-              "ToolTip": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\Views\\TabBillingCodeTypes\\Create.cshtml",
-              "RelativeToolTip": "WELLTRACKSOFT\\Views\\TabBillingCodeTypes\\Create.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "payershealth.cshtml",
+              "DocumentMoniker": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\Views\\TabPayers\\payershealth.cshtml",
+              "RelativeDocumentMoniker": "WELLTRACKSOFT\\Views\\TabPayers\\payershealth.cshtml",
+              "ToolTip": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\Views\\TabPayers\\payershealth.cshtml",
+              "RelativeToolTip": "WELLTRACKSOFT\\Views\\TabPayers\\payershealth.cshtml",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAgwFYAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T02:14:53.002Z",
+              "WhenOpened": "2024-05-08T00:37:58.919Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\Views\\TabBillingCodeTypes\\Index.cshtml",
-              "RelativeDocumentMoniker": "WELLTRACKSOFT\\Views\\TabBillingCodeTypes\\Index.cshtml",
-              "ToolTip": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\Views\\TabBillingCodeTypes\\Index.cshtml",
-              "RelativeToolTip": "WELLTRACKSOFT\\Views\\TabBillingCodeTypes\\Index.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAAAAAAAA",
+              "DocumentMoniker": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\Views\\TabPayers\\Index.cshtml",
+              "RelativeDocumentMoniker": "WELLTRACKSOFT\\Views\\TabPayers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\Views\\TabPayers\\Index.cshtml",
+              "RelativeToolTip": "WELLTRACKSOFT\\Views\\TabPayers\\Index.cshtml",
+              "ViewState": "AQIAABEAAAAAAAAAAAAgwCIAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T02:14:51.723Z",
+              "WhenOpened": "2024-05-07T23:47:28.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TabPayersController.cs",
+              "DocumentMoniker": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\Controllers\\TabPayersController.cs",
+              "RelativeDocumentMoniker": "WELLTRACKSOFT\\Controllers\\TabPayersController.cs",
+              "ToolTip": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\Controllers\\TabPayersController.cs",
+              "RelativeToolTip": "WELLTRACKSOFT\\Controllers\\TabPayersController.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAUwFgAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T02:15:25.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\Views\\TabPayers\\Create.cshtml",
+              "RelativeDocumentMoniker": "WELLTRACKSOFT\\Views\\TabPayers\\Create.cshtml",
+              "ToolTip": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\Views\\TabPayers\\Create.cshtml",
+              "RelativeToolTip": "WELLTRACKSOFT\\Views\\TabPayers\\Create.cshtml",
+              "ViewState": "AQIAAMAAAAAAAAAAAAAmwM0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-07T01:37:44.881Z",
               "EditorCaption": ""
             }
           ]

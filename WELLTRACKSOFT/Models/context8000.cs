@@ -4,18 +4,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace WELLTRACKSOFT.Models;
 
-public partial class context2000 : DbContext
+public partial class context8000 : DbContext
 {
-    public context2000()
+    public context8000()
     {
     }
 
-    public context2000(DbContextOptions<context2000> options)
+    public context8000(DbContextOptions<context8000> options)
         : base(options)
     {
     }
 
-    public virtual DbSet<TabBillingCodesModifier> TabBillingCodesModifiers { get; set; }
+    public virtual DbSet<TabPayersCatalog> TabPayersCatalogs { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -25,25 +25,25 @@ public partial class context2000 : DbContext
     {
         modelBuilder.HasDefaultSchema("welladmin");
 
-        modelBuilder.Entity<TabBillingCodesModifier>(entity =>
+        modelBuilder.Entity<TabPayersCatalog>(entity =>
         {
-            entity.ToTable("tabBillingCodesModifiers", "dbo");
+            entity.ToTable("tabPayersCatalog", "dbo");
 
             entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.BcmodifierCode)
-                .HasMaxLength(50)
-                .IsUnicode(false)
-                .HasColumnName("BCModifierCode");
-            entity.Property(e => e.BcmodifierDesc)
-                .HasMaxLength(255)
-                .IsUnicode(false)
-                .HasColumnName("BCModifierDesc");
-            entity.Property(e => e.CreatedBy)
-                .HasMaxLength(50)
-                .IsUnicode(false);
-            entity.Property(e => e.CreatedDate)
+            entity.Property(e => e.DateCreated)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
+            entity.Property(e => e.PayerId)
+                .HasMaxLength(25)
+                .IsUnicode(false)
+                .HasColumnName("PayerID");
+            entity.Property(e => e.PayerName)
+                .HasMaxLength(150)
+                .IsUnicode(false);
+            entity.Property(e => e.PayerType)
+                .HasMaxLength(10)
+                .IsUnicode(false)
+                .HasComment("I - Institutional; P - Private");
         });
 
         OnModelCreatingPartial(modelBuilder);

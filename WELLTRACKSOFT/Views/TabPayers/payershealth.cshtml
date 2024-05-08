@@ -1,0 +1,358 @@
+﻿@model WELLTRACKSOFT.Models.TabPayer
+@{
+    ViewData["Title"] = "payershealth";
+}
+
+<div class="row  justify-content-between">
+    <div class="col-md-8">
+        <h4 class="text-decoration-none navegacion ms-4 mt-4"><a class="text-decoration-none" href="/Home/Index">Home ></a><a class="text-decoration-none" href="/Home/DashBoard">DashBoard></a><a class="text-decoration-none" href="/Home/Configuration">Configuration></a><a class="text-decoration-none" href="/Home/billingmenu">Billing Menu></a><span class="text-warning">Payer Health</span></h4>
+    </div>
+
+
+</div>
+
+<!--modal-->
+<div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-primary" id="exampleModalLongTitle">New Health @Model.PayerName</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab" aria-controls="general" aria-selected="true">General</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="address-tab" data-bs-toggle="tab" data-bs-target="#address" type="button" role="tab" aria-controls="address" aria-selected="false">Rates</button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="configuration-tab" data-bs-toggle="tab" data-bs-target="#configuration" type="button" role="tab" aria-controls="configuration" aria-selected="false">Configuration</button>
+                    </li>
+
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+
+                        <div class="row  mt-4">
+
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label class="control-label">Plan Name :</label>
+                                    <input id="planname" class="form-control" />
+
+                                </div>
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">Plan Type :</label>
+                                    <select id="plantype" class="form-control">
+                                        <option disabled selected>Select Plan</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="control-label">Comments :</label>
+                                    <textarea id="commentid" rows="3" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="tab-pane fade" id="address" role="tabpanel" aria-labelledby="address-tab">
+                    </div>
+
+                    <div class="tab-pane fade" id="configuration" role="tabpanel" aria-labelledby="configuration-tab">
+
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="form-group styled-select">
+                                    <label class="control-label letraminima">Payer :</label>
+                                    <select id="plantype" class="form-control service-small">
+                                        <option class="service-small" disabled selected>Select Plan</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label letraminima">Submitter :</label>
+                                    <select id="plantype" class="form-control letraminima">
+                                        <option disabled selected>Select Plan</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label letraminima">Billing Provider :</label>
+                                    <select id="plantype" class="form-control letraminima">
+                                        <option disabled selected>Select Plan</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label letraminima">Pay-To Provider :</label>
+                                    <select id="plantype" class="form-control letraminima">
+                                        <option disabled selected>Select Plan</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label letraminima">Service Facility :</label>
+                                    <select id="plantype" class="form-control letraminima">
+                                        <option disabled selected>Select Plan</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label letraminima">Referring Provider :</label>
+                                    <select id="plantype" class="form-control letraminima">
+                                        <option disabled selected>Select Plan</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label letraminima">Rendering Provider :</label>
+                                    <select id="plantype" class="form-control letraminima">
+                                        <option disabled selected>Select Plan</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label letraminima">Bill Under :</label>
+                                    <select id="plantype" class="form-control letraminima">
+                                        <option disabled selected>Select Plan</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label letraminima">Place of service :</label>
+                                    <select id="plantype" class="form-control letraminima">
+                                        <option disabled selected>Select Plan</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label letraminima">Place of Service (same day) :</label>
+                                    <select id="plantype" class="form-control letraminima">
+                                        <option disabled selected>Select Plan</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label letraminima">Max # of Diagnosis :</label>
+                                    <select id="plantype" class="form-control letraminima">
+                                        <option disabled selected>Select Plan</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label letraminima">Line Item Note (NTE) :</label>
+                                    <select id="plantype" class="form-control letraminima">
+                                        <option disabled selected>Select Plan</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label letraminima">Require Prior Authorization :</label>
+                                    <select id="plantype" class="form-control letraminima">
+                                        <option disabled selected>Select Plan</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label letraminima">Provider Signature Indicator :</label>
+                                    <select id="plantype" class="form-control letraminima">
+                                        <option disabled selected>Select Plan</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label letraminima">Provider Accept Assignment Code :</label>
+                                    <select id="plantype" class="form-control letraminima">
+                                        <option disabled selected>Select Plan</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label letraminima">Benefits Assignment Certification Indicator :</label>
+                                    <select id="plantype" class="form-control letraminima">
+                                        <option disabled selected>Select Plan</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label letraminima">Release of Information Code :</label>
+                                    <select id="plantype" class="form-control letraminima">
+                                        <option disabled selected>Select Plan</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label letraminima">Patient Signature Source Code :</label>
+                                    <select id="plantype" class="form-control letraminima">
+                                        <option disabled selected>Select Plan</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="button" value="Clear" class="btn btn-danger" />
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="button" value="Cancel" class="btn btn-light" />
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="button" onclick="createpayer()" value="Create" class="btn btn-primary" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                @*  <button type="button" class="btn btn-primary">Save changes</button> *@
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--fin modal-->
+
+<div class="row mt-2">
+
+    <div class="col-md-5 ml-4 mr-1 shadow-sm p-3 mb-5 bg-white rounded">
+
+        <div class="col-md-4">
+            <img class="cardEstilo3" src="~/image/logo1.png" alt="Card image cap">
+        </div>
+        <div class="col-md-6">
+            @Model.PayerName
+        </div>
+
+    </div>
+
+
+    <div class="col-md-6 shadow-sm ml-1 p-3 mb-5 bg-white rounded">
+
+        <div class="row  justify-content-end">
+
+            <div class="col-md-4 align-content-end">
+                <button type="button" class="btn btn-info" style="font-size:x-small" data-toggle="modal" data-target="#exampleModalCenter">
+                    + New Health Plan
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+

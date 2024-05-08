@@ -1,0 +1,434 @@
+﻿@model WELLTRACKSOFT.Models.TabPayer
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<div class="row  justify-content-between">
+    <div class="col-md-8">
+        <h4 class="text-decoration-none navegacion ms-4 mt-4"><a class="text-decoration-none" href="/Home/Index">Home ></a><a class="text-decoration-none" href="/Home/DashBoard">DashBoard></a><a class="text-decoration-none" href="/Home/Configuration">Configuration></a><a class="text-decoration-none" href="/Home/billingmenu">Billing Menu></a><span class="text-warning">Edit Payer</span></h4>
+    </div>
+
+    <div class=" col-md-2 align-content-end">
+        <a href="#" onclick="openhelp()"><i id="showhelpbutton" class="fas fa-question-circle"></i></a>
+        <span class="idImagen2 text-warning" style="font-size:x-small">Read this for help</span>
+        <a href="#" onclick="closehelp()"><i id="hidehelpbutton" class="fas fa-window-close" style="display:none"></i></a>
+    </div>
+
+</div>
+
+<!--Modal-->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-primary" id="exampleModalLongTitle">Player List</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table id="tableuser" class="Display nowrap  cell-border compact stripe" style="width:100%;font-size:small">
+
+                    <thead>
+                        <tr>
+                            <th>Select</th>
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                Name
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.catalog)
+                        {
+                            <tr>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.Id">
+                                        <i class="fa-regular  fa-lg fa-square"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.PayerId)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.PayerName)
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                @*  <button type="button" class="btn btn-primary">Save changes</button> *@
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--fin modal-->
+
+
+<div class="row mt-2 ml-4 shadow-sm p-3 mb-5 bg-white rounded">
+
+    <div class="row">
+
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab" aria-controls="general" aria-selected="true">General</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="address-tab" data-bs-toggle="tab" data-bs-target="#address" type="button" role="tab" aria-controls="address" aria-selected="false">Address</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="configuration-tab" data-bs-toggle="tab" data-bs-target="#configuration" type="button" role="tab" aria-controls="configuration" aria-selected="false">Configuration</button>
+                </li>
+
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+                    <form asp-action="Create">
+                        <div class="row mt-2">
+                            <div class="col-md-10">
+
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                                <div class="form-group">
+                                    <label asp-for="PayerName" class="control-label"></label>
+                                    <input asp-for="PayerName" class="form-control" />
+                                    <span asp-validation-for="PayerName" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mt-4">
+                                <div class="form-group mt-2">
+                                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">
+                                        Catalog
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Email" class="control-label"></label>
+                                    <input asp-for="Email" class="form-control" />
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Phone" class="control-label"></label>
+                                    <input asp-for="Phone" class="form-control" />
+                                    <span asp-validation-for="Phone" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Fax" class="control-label"></label>
+                                    <input asp-for="Fax" class="form-control" />
+                                    <span asp-validation-for="Fax" class="text-danger"></span>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Website" class="control-label"></label>
+                                    <input asp-for="Website" class="form-control" />
+                                    <span asp-validation-for="Website" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="form-group">
+                                    <label asp-for="Description" class="control-label"></label>
+                                    <input asp-for="Description" class="form-control" />
+                                    <span asp-validation-for="Description" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="display:none">
+
+                            <div class="form-group">
+                                <label asp-for="TabStreetAddressId" class="control-label"></label>
+                                <input asp-for="TabStreetAddressId" class="form-control" />
+                                <span asp-validation-for="TabStreetAddressId" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="ExternalId" class="control-label"></label>
+                                <input asp-for="ExternalId" class="form-control" />
+                                <span asp-validation-for="ExternalId" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="TradingPartnerId" class="control-label"></label>
+                                <input asp-for="TradingPartnerId" class="form-control" />
+                                <span asp-validation-for="TradingPartnerId" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Logo" class="control-label"></label>
+                                <input asp-for="Logo" class="form-control" />
+                                <span asp-validation-for="Logo" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="CreatedBy" class="control-label"></label>
+                                <input asp-for="CreatedBy" class="form-control" />
+                                <span asp-validation-for="CreatedBy" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="PayerId" class="control-label"></label>
+                                <input asp-for="PayerId" class="form-control" />
+                                <span asp-validation-for="PayerId" class="text-danger"></span>
+                            </div>
+
+
+                        </div>
+
+                    </form>
+                </div>
+
+
+                <div class="tab-pane fade" id="address" role="tabpanel" aria-labelledby="address-tab">
+
+                    <form asp-action="Create">
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">Line 1:</label>
+                                    <input id="line1" class="form-control" />
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">Line 2:</label>
+                                    <input id="line2" class="form-control" />
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">City:</label>
+                                    <input id="city" class="form-control" />
+
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">State:</label>
+                                    <input id="state" class="form-control" />
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">Zip code:</label>
+                                    <input id="zipcode" class="form-control" />
+
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">Country:</label>
+                                    <input id="country" class="form-control" />
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="tab-pane fade" id="configuration" role="tabpanel" aria-labelledby="configuration-tab">
+
+                    <form asp-action="Create">
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">External ID:</label>
+                                    <input id="externalid" class="form-control" />
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">Allowed Clearing Houses:</label>
+                                    <select id="clearance" class="form-control" asp-items="@ViewBag.houseis">
+                                        <option selected disabled>Select House</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="button" value="Clear" class="btn btn-danger" />
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="button" value="Cancel" class="btn btn-light" />
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="button" onclick="createpayer()" value="Edit" class="btn btn-primary" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <a asp-action="Index">Back to List</a>
+            </div>
+
+
+        </div>
+
+        <div class="col-md-2">
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+@section scripts {
+
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+
+    }
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('#tableuser').DataTable()
+
+
+
+        })
+
+        function createpayer() {
+
+            //TAB 1
+
+            var payername = $('#PayerName').val();
+
+            var email = $('#Email').val();
+
+            var phone = $('#Phone').val();
+
+            var fax = $('#Fax').val();
+
+            var website = $('#Website').val();
+
+            var description = $('#Description').val();
+
+
+            //TAB 2
+
+            var line1 = $('#line1').val();
+
+            var line2 = $('#line2').val();
+
+            var city = $('#city').val();
+
+            var state = $('#state').val();
+
+            var zipcode = $('#zipcode').val();
+
+            var country = $('#country').val();
+
+            //TAB 3
+
+
+            var externalid = $('#externalid').val();
+
+            var clearance = $('#clearance').val();
+
+
+            var infopayer = {
+
+                payername: payername,
+                email: email,
+                phone: phone,
+                fax: fax,
+                website: website,
+                description: description,
+                line1: line1,
+                line2: line2,
+                city: city,
+                state: state,
+                zipcode: zipcode,
+                country: country,
+                externalid: externalid,
+                clearance: clearance
+
+            }
+
+            debugger;
+
+            var info = "";
+        }
+
+    </script>
+
+}
+

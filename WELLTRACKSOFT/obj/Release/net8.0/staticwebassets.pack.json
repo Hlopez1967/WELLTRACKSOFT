@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\wwwroot\\image\\logo1.png",
+      "PackagePath": "staticwebassets\\image\\logo1.png"
+    },
+    {
+      "Id": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\wwwroot\\image\\logo2.png",
+      "PackagePath": "staticwebassets\\image\\logo2.png"
+    },
+    {
+      "Id": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\wwwroot\\image\\logo3.png",
+      "PackagePath": "staticwebassets\\image\\logo3.png"
+    },
+    {
+      "Id": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\wwwroot\\image\\logo4.png",
+      "PackagePath": "staticwebassets\\image\\logo4.png"
+    },
+    {
       "Id": "C:\\Users\\herle\\source\\repos\\WELLTRACKSOFT\\WELLTRACKSOFT\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

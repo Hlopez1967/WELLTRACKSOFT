@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WELLTRACKSOFT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e6d499d13af8f13c6c093c491b1d5ea8da0b7c4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3c1ba65d8ebbbec78d1fd5283a0206e228dcc53")]
 [assembly: System.Reflection.AssemblyProductAttribute("WELLTRACKSOFT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WELLTRACKSOFT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -22,12 +22,133 @@ public partial class WellTrackDbContext : DbContext
     public virtual DbSet<TabStandardBillingCode> TabStandardBillingCodes { get; set; }
     public virtual DbSet<TabBillingCodeType> TabBillingCodeTypes { get; set; }
     public virtual DbSet<TabBillingCodesModifier> TabBillingCodesModifiers { get; set; }
+    public virtual DbSet<TabBillingCodesTypesRelation> TabBillingCodesTypesRelations { get; set; }
+    public virtual DbSet<TabBillingCodesTypesPlacesOfServicesRelation> TabBillingCodesTypesPlacesOfServicesRelations { get; set; }
+    public virtual DbSet<TabPayer> TabPayers { get; set; }
+    public virtual DbSet<TabPayersClearingHouse> TabPayersClearingHouses { get; set; }
+    public virtual DbSet<TabPayersCatalog> TabPayersCatalogs { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("Server=P3NWPLSK12SQL-v03.shr.prod.phx3.secureserver.net;Database=WellTrackDb;TrustServerCertificate=true;persist security info=True;user id=welladmin;password=0hrS114@w");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.HasDefaultSchema("welladmin");
+
+        modelBuilder.Entity<TabPayersCatalog>(entity =>
+        {
+            entity.ToTable("tabPayersCatalog", "dbo");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.DateCreated)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.PayerId)
+                .HasMaxLength(25)
+                .IsUnicode(false)
+                .HasColumnName("PayerID");
+            entity.Property(e => e.PayerName)
+                .HasMaxLength(150)
+                .IsUnicode(false);
+            entity.Property(e => e.PayerType)
+                .HasMaxLength(10)
+                .IsUnicode(false)
+                .HasComment("I - Institutional; P - Private");
+        });
+
+        modelBuilder.Entity<TabPayersClearingHouse>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("tabpayersclearinghouses_id_primary");
+
+            entity.ToTable("tabPayersClearingHouses", "dbo");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.IsActive).HasDefaultValue(true);
+            entity.Property(e => e.IsDefault).HasDefaultValue(true);
+            entity.Property(e => e.TabClearingHousesId).HasColumnName("tabClearingHousesId");
+            entity.Property(e => e.TabPayersId).HasColumnName("tabPayersId");
+        });
+
+        modelBuilder.Entity<TabPayer>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("tabpayers_id_primary");
+
+            entity.ToTable("tabPayers", "dbo");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedBy)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.DateCreated)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.Description)
+                .HasMaxLength(500)
+                .IsUnicode(false);
+            entity.Property(e => e.Email)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+            entity.Property(e => e.ExternalId)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.Fax)
+                .HasMaxLength(25)
+                .IsUnicode(false)
+                .HasColumnName("FAX");
+            entity.Property(e => e.Logo).HasMaxLength(16);
+            entity.Property(e => e.PayerId)
+                .HasMaxLength(25)
+                .IsUnicode(false)
+                .HasColumnName("PayerID");
+            entity.Property(e => e.PayerName)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.Phone)
+                .HasMaxLength(25)
+                .IsUnicode(false);
+            entity.Property(e => e.TabStreetAddressId).HasColumnName("tabStreetAddressId");
+            entity.Property(e => e.TradingPartnerId)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("TradingPartnerID");
+            entity.Property(e => e.Website)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<TabBillingCodesTypesPlacesOfServicesRelation>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("tabbillingcodestypesplacesofservicesrelation_id_primary");
+
+            entity.ToTable("tabBillingCodesTypesPlacesOfServicesRelation", "dbo");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.TabBillingCodesTypesRelationId).HasColumnName("tabBillingCodesTypesRelationId");
+            entity.Property(e => e.TabPlacesOfServiceId).HasColumnName("tabPlacesOfServiceId");
+        });
+
+        modelBuilder.Entity<TabBillingCodesTypesRelation>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("tabbillingcodestypesrelation_id_primary");
+
+            entity.ToTable("tabBillingCodesTypesRelation", "dbo");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.BillingCode)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasComment("= StdBillingCodeId  + “-” +  BCModifierCode1 + “-” +  BCModifierCode2 + “-” +  BCModifierCodeN");
+            entity.Property(e => e.BillingCodeDesc)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+            entity.Property(e => e.CreatedBy)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.CreatedDate)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.TabBillingCodeTypeId).HasColumnName("tabBillingCodeTypeId");
+        });
 
         modelBuilder.Entity<TabBillingCodesModifier>(entity =>
         {

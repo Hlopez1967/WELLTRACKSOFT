@@ -126,6 +126,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFiQmlsbGluZ0NvZGVzTW9kaWZpZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/herle/source/repos/WELLTRACKSOFT/WELLTRACKSOFT/Views/TabBillingCodesTypesRelations/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFiQmlsbGluZ0NvZGVzVHlwZXNSZWxhdGlvbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/herle/source/repos/WELLTRACKSOFT/WELLTRACKSOFT/Views/TabBillingCodesTypesRelations/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFiQmlsbGluZ0NvZGVzVHlwZXNSZWxhdGlvbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/herle/source/repos/WELLTRACKSOFT/WELLTRACKSOFT/Views/TabBillingCodesTypesRelations/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFiQmlsbGluZ0NvZGVzVHlwZXNSZWxhdGlvbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/herle/source/repos/WELLTRACKSOFT/WELLTRACKSOFT/Views/TabBillingCodesTypesRelations/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFiQmlsbGluZ0NvZGVzVHlwZXNSZWxhdGlvbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/herle/source/repos/WELLTRACKSOFT/WELLTRACKSOFT/Views/TabBillingCodesTypesRelations/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFiQmlsbGluZ0NvZGVzVHlwZXNSZWxhdGlvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/herle/source/repos/WELLTRACKSOFT/WELLTRACKSOFT/Views/TabBillingCodeTypes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFiQmlsbGluZ0NvZGVUeXBlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -164,6 +184,50 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/herle/source/repos/WELLTRACKSOFT/WELLTRACKSOFT/Views/TabCompanyGeneralInfoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFiQ29tcGFueUdlbmVyYWxJbmZvZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/herle/source/repos/WELLTRACKSOFT/WELLTRACKSOFT/Views/TabPayersCatalogs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFiUGF5ZXJzQ2F0YWxvZ3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/herle/source/repos/WELLTRACKSOFT/WELLTRACKSOFT/Views/TabPayersCatalogs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFiUGF5ZXJzQ2F0YWxvZ3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/herle/source/repos/WELLTRACKSOFT/WELLTRACKSOFT/Views/TabPayersCatalogs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFiUGF5ZXJzQ2F0YWxvZ3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/herle/source/repos/WELLTRACKSOFT/WELLTRACKSOFT/Views/TabPayersCatalogs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFiUGF5ZXJzQ2F0YWxvZ3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/herle/source/repos/WELLTRACKSOFT/WELLTRACKSOFT/Views/TabPayersCatalogs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFiUGF5ZXJzQ2F0YWxvZ3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/herle/source/repos/WELLTRACKSOFT/WELLTRACKSOFT/Views/TabPayers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFiUGF5ZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/herle/source/repos/WELLTRACKSOFT/WELLTRACKSOFT/Views/TabPayers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFiUGF5ZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/herle/source/repos/WELLTRACKSOFT/WELLTRACKSOFT/Views/TabPayers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFiUGF5ZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/herle/source/repos/WELLTRACKSOFT/WELLTRACKSOFT/Views/TabPayers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFiUGF5ZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/herle/source/repos/WELLTRACKSOFT/WELLTRACKSOFT/Views/TabPayers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFiUGF5ZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/herle/source/repos/WELLTRACKSOFT/WELLTRACKSOFT/Views/TabPayers/payershealth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFiUGF5ZXJzXHBheWVyc2hlYWx0aC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/herle/source/repos/WELLTRACKSOFT/WELLTRACKSOFT/Views/TabPlacesOfServices/Create.cshtml]

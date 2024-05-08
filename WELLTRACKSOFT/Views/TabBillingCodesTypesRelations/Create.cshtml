@@ -1,0 +1,225 @@
+﻿@model WELLTRACKSOFT.Models.TabBillingCodesTypesRelation
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<div class="row  justify-content-between">
+    <div class="col-md-8">
+        <h4 class="text-decoration-none navegacion ms-4 mt-4"><a class="text-decoration-none" href="/Home/Index">Home ></a><a class="text-decoration-none" href="/Home/DashBoard">DashBoard></a><a class="text-decoration-none" href="/Home/Configuration">Configuration></a><a class="text-decoration-none" href="/Home/billingmenu">Billing Menu></a><span class="text-warning">New Billing Codes</span></h4>
+    </div>
+
+
+</div>
+<div class="row mt-2 ml-4 shadow-sm p-3 mb-5 bg-white rounded">
+    <form asp-action="Create" id="formcreate">
+        <div class="row">
+            <div class="col-md-6">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="TabBillingCodeTypeId" class="control-label"></label>
+                    <select asp-for="TabBillingCodeTypeId" class="form-control" asp-items="@ViewBag.codesid">
+                        <option disabled selected>Select Code</option>
+                    </select>
+                    <span asp-validation-for="TabBillingCodeTypeId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="BillingCode" class="control-label"></label>
+
+                    <select asp-for="BillingCode" class="form-control" asp-items="@ViewBag.standardid">
+                        <option disabled selected>Select Standard Code</option>
+                    </select>
+                    <span asp-validation-for="BillingCode" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+       
+        <div class="row">
+            <div class="col-md-6">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="modifiercodes" class="control-label"></label>
+                    <select asp-for="modifiercodes" class="form-control" asp-items="@ViewBag.modifierid">
+                        <option disabled selected>JKL MNO PQR</option>
+                    </select>
+                    <span asp-validation-for="modifiercodes" class="text-danger"></span>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="places" class="control-label"></label>
+                    <select asp-for="places" class="form-control" asp-items="@ViewBag.placesid">
+                        <option disabled selected>Office Home</option>
+                    </select>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="BillingCodeDesc" class="control-label"></label>
+                    <textarea asp-for="BillingCodeDesc" rows="3" class="form-control"></textarea>
+                    <span asp-validation-for="BillingCodeDesc" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="display:none">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label asp-for="CreatedBy" class="control-label"></label>
+                    <input asp-for="CreatedBy" class="form-control" />
+                    <span asp-validation-for="CreatedBy" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1">
+                <div class="form-group">
+                    <input type="submit" value="Clear" class="btn btn-danger" />
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="form-group">
+                    <input type="submit" value="Cancel" class="btn btn-light" />
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="form-group">
+                    <input type="button" onclick="create()" value="Create" class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <a asp-action="Index">Back to List</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+@section scripts
+{
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+
+        $('#BillingCode').change(function () {
+
+            var id = this.value;
+
+            $.ajax({ url: "@Url.Action("findBillCodeDescription", "TabBillingCodesTypesRelations")", data: { id: id }, type: "post" })
+                .done(function (data) {
+
+                    if (data.status == "OK") {
+
+                        $('#BillingCodeDesc').val(data.desc);
+                    }
+                    else {
+
+
+
+                        swal({
+                            title: "Error!",
+                            text: data.status,
+                            icon: "error",
+                            button: "OK",
+                        });
+
+
+                    }
+                }).fail().always();
+
+            $('#BillingCodeDesc').val();
+        })
+
+
+        function create() {
+
+            var codetype = $('#TabBillingCodeTypeId option:selected').val();
+
+            var billincode = $('#BillingCode option:selected').text();
+
+            var billindesc = $('#BillingCodeDesc').val();
+
+            var placesid = $('#places option:selected').index();
+
+            // var places = "";
+            // if (placesid == 0) {
+                
+            //     places = "ALL";
+            // }
+            // else {
+                places = $('#places option:selected').val();
+            // }
+           
+
+            
+
+            var modifiers = $('#modifiercodes option:selected').text();
+
+           
+
+            alert('creando');
+
+            $.ajax({
+                url: "@Url.Action("createbillcoderel", "TabBillingCodesTypesRelations")",
+                data: {
+                    codetype: codetype,
+                    billincode: billincode,
+                    billindesc: billindesc,
+                    places: places,
+                    modifiers: modifiers
+
+                }, type: "post"
+            })
+                .done(function (data) {
+
+                    if (data.status == "OK") {
+
+                       // $('#BillingCodeDesc').val(data.desc);
+
+                        swal({
+                            title: "success!",
+                            text: 'Billing code Added',
+                            icon: "success",
+                            button: "OK",
+                        }).then((value) => {
+                            var url = '@Url.Action("index", "TabBillingCodesTypesRelations")';
+                            window.location.href = url;
+                        });
+
+                    }
+                    else {
+
+                        swal({
+                            title: "Error!",
+                            text: data.status,
+                            icon: "error",
+                            button: "OK",
+                        });
+
+
+                    }
+                }).fail().always();
+
+
+        }
+
+      
+    </script>
+}

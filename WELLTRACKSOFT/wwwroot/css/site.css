@@ -59,4 +59,17 @@ body {
     display: inline-block;
     width: 100%;
 }
+.cardEstilo3 {
+    max-width: 200px;
+    font-size: inherit;
+}
+.letraminima
+{
+    font-size:x-small;
+}
 
+.styled-select option.service-small {
+    font-size: 14px;
+    padding: 5px;
+    background: #5c5c5c;
+}
